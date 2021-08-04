@@ -37,10 +37,12 @@ export default function Buttons() {
 
       <Button type='submit'>Submit</Button>
       <br />
+      <br />
 
       <Button type='submit' color='secondary' variant='outlined'>
         Submit
       </Button>
+      <br />
       <br />
 
       <ButtonGroup color='primary' variant='contained'>
@@ -48,6 +50,7 @@ export default function Buttons() {
         <Button>Two</Button>
         <Button>Three</Button>
       </ButtonGroup>
+      <br />
       <br />
 
       <Button
@@ -60,6 +63,7 @@ export default function Buttons() {
         Submit
       </Button>
       <br />
+      <br />
 
       <AcUnitIcon />
       <AcUnitIcon color='primary' fontSize='large' />
@@ -67,6 +71,7 @@ export default function Buttons() {
       <AcUnitIcon color='action' fontSize='small' />
       <AcUnitIcon color='error' fontSize='small' />
       <AcUnitIcon color='disabled' fontSize='small' />
+      <br />
       <br />
 
       <Button

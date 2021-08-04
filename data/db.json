@@ -1,0 +1,28 @@
+{
+  "notes": [
+    {
+      "id": "1",
+      "title": "Text",
+      "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "category": "reminders"
+    },
+    {
+      "id": "2",
+      "title": "Button",
+      "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "category": "work"
+    },
+    {
+      "id": "3",
+      "title": "Form",
+      "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "category": "todos"
+    },
+    {
+      "title": "Mario",
+      "details": "Go!!!",
+      "category": "money",
+      "id": "gSbF59C"
+    }
+  ]
+}
