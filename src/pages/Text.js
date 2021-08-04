@@ -2,15 +2,6 @@ import { Typography, Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles({
-  btn: {
-    fontSize: 60,
-    backgroundColor: 'violet',
-
-    '&:hover': {
-      backgroundColor: 'pink',
-    },
-  },
-
   title: {
     textDecoration: 'underline',
     marginBottom: 20,

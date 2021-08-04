@@ -1,9 +1,15 @@
 import { useState } from 'react';
+import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 import {
   makeStyles,
   Container,
   Typography,
+  FormControlLabel,
+  FormControl,
+  FormLabel,
   TextField,
+  RadioGroup,
+  Radio,
   Button,
 } from '@material-ui/core';
 
@@ -12,6 +18,15 @@ const useStyles = makeStyles({
     marginTop: 20,
     marginBottom: 20,
     display: 'block',
+  },
+
+  btn: {
+    backgroundColor: 'red',
+    color: 'white',
+
+    '&:hover': {
+      backgroundColor: 'pink',
+    },
   },
 });
 
@@ -22,6 +37,7 @@ export default function Form() {
   const [details, setDetails] = useState('');
   const [titleError, setTitleError] = useState(false);
   const [detailsError, setDetailsError] = useState(false);
+  const [category, setCategory] = useState('todos');
 
   const mui = useStyles();
 
@@ -40,7 +56,7 @@ export default function Form() {
       : details === ''
       ? setDetailsError(true)
       : title && details
-      ? log(title, details)
+      ? log(title, details, category)
       : log('smth wrong');
   };
 
@@ -72,11 +88,25 @@ export default function Form() {
           error={detailsError}
         />
 
+        <FormControl className={mui.field}>
+          <FormLabel>Note Category</FormLabel>
+          <RadioGroup
+            value={category}
+            onChange={e => setCategory(e.target.value)}
+          >
+            <FormControlLabel value='money' control={<Radio />} label='Money' />
+            <FormControlLabel value='todos' control={<Radio />} label='Todos' />
+            <FormControlLabel value='remds' control={<Radio />} label='Remds' />
+            <FormControlLabel value='work' control={<Radio />} label='Work' />
+          </RadioGroup>
+        </FormControl>
+        <br />
+
         <Button
-          className={mui.btn}
           type='submit'
           color='secondary'
           variant='contained'
+          endIcon={<KeyboardArrowRightIcon />}
         >
           Submit
         </Button>
