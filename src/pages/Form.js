@@ -61,7 +61,7 @@ export default function Form() {
     // details === "" && setDetailsError(true);
     // title && details && log(title, details);
 
-    title == ""
+    title === ""
       ? setTitleError(true)
       : details === ""
       ? setDetailsError(true)
@@ -72,15 +72,15 @@ export default function Form() {
 
   return (
     <Container>
-      <Typography variant="h1">Form</Typography>
+      <Typography variant='h1'>Form</Typography>
 
-      <form noValidate autoComplete="off" onSubmit={handleSubmit}>
+      <form noValidate autoComplete='off' onSubmit={handleSubmit}>
         <TextField
           className={mui.field}
           onChange={e => setTitle(e.target.value)}
-          label="Note Title"
-          variant="outlined"
-          color="secondary"
+          label='Note Title'
+          variant='outlined'
+          color='secondary'
           fullWidth
           required
           error={titleError}
@@ -89,9 +89,9 @@ export default function Form() {
         <TextField
           className={mui.field}
           onChange={e => setDetails(e.target.value)}
-          label="Details"
-          variant="outlined"
-          color="secondary"
+          label='Details'
+          variant='outlined'
+          color='secondary'
           multiline
           rows={4}
           required
@@ -104,18 +104,18 @@ export default function Form() {
             value={category}
             onChange={e => setCategory(e.target.value)}
           >
-            <FormControlLabel value="money" control={<Radio />} label="Money" />
-            <FormControlLabel value="todos" control={<Radio />} label="Todos" />
-            <FormControlLabel value="remds" control={<Radio />} label="Remds" />
-            <FormControlLabel value="work" control={<Radio />} label="Work" />
+            <FormControlLabel value='money' control={<Radio />} label='Money' />
+            <FormControlLabel value='todos' control={<Radio />} label='Todos' />
+            <FormControlLabel value='remds' control={<Radio />} label='Remds' />
+            <FormControlLabel value='work' control={<Radio />} label='Work' />
           </RadioGroup>
         </FormControl>
         <br />
 
         <Button
-          type="submit"
-          color="secondary"
-          variant="contained"
+          type='submit'
+          color='secondary'
+          variant='contained'
           endIcon={<KeyboardArrowRightIcon />}
         >
           Submit
