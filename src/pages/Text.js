@@ -25,7 +25,7 @@ export default function Text() {
       <Typography noWrap color='secondary'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
         dolorem culpa quod delectus itaque laudantium laboriosam consequatur
-        quia aspernatur quos!
+        quia aspernatur!
       </Typography>
 
       <Typography
