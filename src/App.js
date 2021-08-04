@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Notes from './pages/Notes';
-import Create from './pages/Create';
+import Text from './pages/Text';
+import Form from './pages/Form';
+import Buttons from './pages/Buttons';
 import { createTheme, ThemeProvider } from '@material-ui/core';
 import { red } from '@material-ui/core/colors';
 
@@ -29,8 +31,14 @@ function App() {
           <Route exact path='/'>
             <Notes />
           </Route>
-          <Route path='/create'>
-            <Create />
+          <Route path='/text'>
+            <Text />
+          </Route>
+          <Route exact path='/buttons'>
+            <Buttons />
+          </Route>
+          <Route path='/form'>
+            <Form />
           </Route>
         </Switch>
       </Router>

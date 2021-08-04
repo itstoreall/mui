@@ -1,4 +1,4 @@
-import { Typography, Button, ButtonGroup, Container } from '@material-ui/core';
+import { Container, Typography, Button, ButtonGroup } from '@material-ui/core';
 import AcUnitIcon from '@material-ui/icons/AcUnit';
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 import { makeStyles } from '@material-ui/core';
@@ -21,7 +21,7 @@ const useStyles = makeStyles({
 
 const { log } = console;
 
-export default function Create() {
+export default function Buttons() {
   const mui = useStyles();
 
   return (
@@ -32,35 +32,23 @@ export default function Create() {
         color='primary'
         align='center'
       >
-        Create a new Note
-      </Typography>
-
-      <Typography noWrap color='secondary'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-        dolorem culpa quod delectus itaque laudantium laboriosam consequatur
-        quia aspernatur quos!
-      </Typography>
-
-      <Typography
-        color='textSecondary'
-        variant='h6'
-        component='h2'
-        gutterBottom
-      >
-        h2 instead h6 in markup, but with h2 font-size
+        Buttons
       </Typography>
 
       <Button type='submit'>Submit</Button>
+      <br />
 
       <Button type='submit' color='secondary' variant='outlined'>
         Submit
       </Button>
+      <br />
 
       <ButtonGroup color='primary' variant='contained'>
         <Button>One</Button>
         <Button>Two</Button>
         <Button>Three</Button>
       </ButtonGroup>
+      <br />
 
       <Button
         className={mui.btn}
@@ -79,6 +67,7 @@ export default function Create() {
       <AcUnitIcon color='action' fontSize='small' />
       <AcUnitIcon color='error' fontSize='small' />
       <AcUnitIcon color='disabled' fontSize='small' />
+      <br />
 
       <Button
         type='submit'
